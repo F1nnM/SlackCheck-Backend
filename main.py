@@ -25,7 +25,7 @@ def query(query: Optional[str] = None):
              "price": 1234,
              "description": "XYZ",
              "platform": "XYZ",
-             "link": "XY.de",
+             "url": "XY.de",
              "image": "XYZ.de",
              "history": [
                  {
