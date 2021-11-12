@@ -26,7 +26,7 @@ def query(query: Optional[str] = None):
              "description": "XYZ",
              "platform": "XYZ",
              "url": "XY.de",
-             "image": "XYZ.de",
+             "image": "https://via.placeholder.com/150",
              "history": [
                  {
                      "timestamp": 1234,
