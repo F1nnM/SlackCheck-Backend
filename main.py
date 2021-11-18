@@ -1,14 +1,15 @@
-from typing import List, Optional
+from typing import Any, List, Optional
 
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-app = FastAPI()
+import apis.amazon
 
+app = FastAPI()
 
 class Item(BaseModel):
     class HistoryEntry(BaseModel):
-        timestamp: int
+        timestamp: float
         price: float
         growth: float
     name: str
@@ -19,9 +20,7 @@ class Item(BaseModel):
     image: Optional[str] = None
     history: List[HistoryEntry]
 
-@app.get("/", response_model=List[Item])
-def query(query: Optional[str] = None):
-    return [{"name": "XYZ",
+dummy_data = [{"name": "XYZ",
              "price": 1234,
              "description": "XYZ",
              "platform": "XYZ",
@@ -34,3 +33,31 @@ def query(query: Optional[str] = None):
                      "price": 1234
                  }
              ]}]
+
+@app.get("/", response_model=List[Item])
+def query(query: Optional[str] = None, load_new: Optional[bool] = False):
+    amazon = apis.amazon.get_items_by_search(query)
+    if amazon:
+        amazon = add_history_to_items(amazon)
+    return concat([
+        dummy_data,
+        amazon
+    ])
+
+# concat multiple lists
+def concat(lists: List[List[Item]]) -> List[Item]:
+    result = []
+    for l in lists:
+        result.extend(l)
+    return result
+
+def add_history_to_items(items: List[Any]):
+    for item in items:
+        item['history'] = [
+            {
+                "timestamp": item['history_timestamp'],
+                "price": item['price'],
+                "growth": 0
+            }
+        ]
+    return items
