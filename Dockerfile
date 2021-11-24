@@ -6,6 +6,7 @@ COPY ./requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 COPY ./main.py /app/main.py
 COPY ./apis /app/apis
+COPY ./utils /app/utils
 
 EXPOSE 80
 
