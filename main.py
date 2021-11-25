@@ -74,7 +74,7 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
             if index == 0:
                 item['history'][index]['growth'] = 0
             else:
-                item['history'][index]['growth'] = int((item['history'][index]['price'] / item['history'][index-1]['price'] -1)*100)/100
+                item['history'][index]['growth'] = int((item['history'][index]['price'] / item['history'][index-1]['price'])*1000)/1000
         
 
     cached_calls.add(query)
