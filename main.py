@@ -51,15 +51,14 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
         amazon = apis.amazon.get_items_by_search(query)
     else:
         amazon = deepcopy(apis.amazon.get_items_by_search_cached(query))
-        for item in amazon:
-            item["timestamp"] = time.time()
     
     all_items = concat([
         amazon
     ])
 
     for item in all_items:
-        history.add(item['history_id'], item['timestamp'], item['price'])
+        if load_new:
+            history.add(item['history_id'], item['timestamp'], item['price'])
 
         del item['timestamp']
 
