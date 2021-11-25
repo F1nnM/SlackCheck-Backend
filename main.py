@@ -41,9 +41,9 @@ history = HistoryCache()
 @app.get("/", response_model=List[Item])
 def query(query: Optional[str] = None, load_new: Optional[bool] = False):
     if load_new:
-        amazon = apis.amazon.get_items_by_search_cached(query)
-    else:
         amazon = apis.amazon.get_items_by_search(query)
+    else:
+        amazon = apis.amazon.get_items_by_search_cached(query)
     
     all_items = concat([
         amazon

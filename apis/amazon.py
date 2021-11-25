@@ -21,7 +21,6 @@ def fetch_api(query):
 #clean up the results
 def _clean_up_data(results, timestamp):
     clean_results = []
-    print(results)
     for result in results:
         price = 0
         price_matches = re.findall("^\d+,\d+", result['price'])
@@ -40,6 +39,7 @@ def _clean_up_data(results, timestamp):
     return clean_results
 
 def get_items_by_search(query):
+    print(f"Fetching new for ${query}")
     results = fetch_api(query)
 
     timestamp = time.time()
