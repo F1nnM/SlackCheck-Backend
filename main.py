@@ -3,6 +3,8 @@ from typing import Any, List, Optional
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+from copy import deepcopy
+
 import apis.amazon
 from utils.cache import HistoryCache
 
@@ -43,7 +45,7 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
     if load_new:
         amazon = apis.amazon.get_items_by_search(query)
     else:
-        amazon = apis.amazon.get_items_by_search_cached(query)
+        amazon = deepcopy(apis.amazon.get_items_by_search_cached(query))
     
     all_items = concat([
         amazon
@@ -68,7 +70,7 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
                 item['history'][index]['growth'] = int((item['history'][index]['price'] / item['history'][index-1]['price'] -1)*100)/100
         
     return all_items
-
+    
 # concat multiple lists
 def concat(lists: List[List[Item]]) -> List[Item]:
     result = []
