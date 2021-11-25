@@ -42,7 +42,7 @@ history = HistoryCache()
 
 @app.get("/", response_model=List[Item])
 def query(query: Optional[str] = None, load_new: Optional[bool] = False):
-    if load_new:
+    if load_new or query[0] == "!":
         amazon = apis.amazon.get_items_by_search(query)
     else:
         amazon = deepcopy(apis.amazon.get_items_by_search_cached(query))
