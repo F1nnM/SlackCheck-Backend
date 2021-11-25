@@ -4,6 +4,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 
 from copy import deepcopy
+import time
 
 import apis.amazon
 from utils.cache import HistoryCache
@@ -45,11 +46,13 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
     if query[0] == "!":
         load_new = True
         query = query[1:]
-        
+
     if load_new:
         amazon = apis.amazon.get_items_by_search(query)
     else:
         amazon = deepcopy(apis.amazon.get_items_by_search_cached(query))
+        for item in amazon:
+            item["timestamp"] = time.time()
     
     all_items = concat([
         amazon
