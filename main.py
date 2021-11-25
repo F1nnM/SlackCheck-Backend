@@ -72,7 +72,7 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
 
         for index in range(len(item['history'])):
             if index == 0:
-                item['history'][index]['growth'] = 0
+                item['history'][index]['growth'] = 1
             else:
                 item['history'][index]['growth'] = int((item['history'][index]['price'] / item['history'][index-1]['price'])*1000)/1000
         
