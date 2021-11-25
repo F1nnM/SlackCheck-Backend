@@ -1,4 +1,4 @@
-from typing import Any, List, Optional
+from typing import Any, List, Optional, Set
 
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -40,6 +40,7 @@ class Item(BaseModel):
 
 
 history = HistoryCache()
+cached_calls = set()
 
 @app.get("/", response_model=List[Item])
 def query(query: Optional[str] = None, load_new: Optional[bool] = False):
@@ -57,7 +58,7 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
     ])
 
     for item in all_items:
-        if load_new:
+        if load_new or not query in cached_calls:
             history.add(item['history_id'], item['timestamp'], item['price'])
 
         del item['timestamp']
@@ -75,6 +76,9 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
             else:
                 item['history'][index]['growth'] = int((item['history'][index]['price'] / item['history'][index-1]['price'] -1)*100)/100
         
+
+    cached_calls.add(query)
+
     return all_items
     
 # concat multiple lists
