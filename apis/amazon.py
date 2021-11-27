@@ -5,7 +5,7 @@ from environs import Env
 import re
 
 env = Env()
-API_KEY = env("API_KEY")
+API_KEY = env("API_KEY_AMAZON")
 def fetch_api(query):
     url = "https://amazon-price1.p.rapidapi.com/search"
 

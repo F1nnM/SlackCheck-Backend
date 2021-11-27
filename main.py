@@ -7,6 +7,7 @@ from copy import deepcopy
 import time
 
 import apis.amazon
+import apis.bestbuy
 from utils.cache import HistoryCache
 
 app = FastAPI()
@@ -50,11 +51,14 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
 
     if load_new:
         amazon = apis.amazon.get_items_by_search(query)
+        bestbuy = apis.bestbuy.get_items_by_search(query)
     else:
         amazon = deepcopy(apis.amazon.get_items_by_search_cached(query))
+        bestbuy = deepcopy(apis.amazon.get_items_by_search_cached(query))
     
     all_items = concat([
-        amazon
+        amazon,
+        bestbuy
     ])
 
     for item in all_items:
