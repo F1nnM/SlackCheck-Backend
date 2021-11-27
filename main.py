@@ -54,7 +54,7 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
         bestbuy = apis.bestbuy.get_items_by_search(query)
     else:
         amazon = deepcopy(apis.amazon.get_items_by_search_cached(query))
-        bestbuy = deepcopy(apis.amazon.get_items_by_search_cached(query))
+        bestbuy = deepcopy(apis.bestbuy.get_items_by_search_cached(query))
     
     all_items = concat([
         amazon,
