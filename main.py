@@ -8,6 +8,7 @@ import time
 
 import apis.amazon
 import apis.bestbuy
+import apis.ebay
 from utils.cache import HistoryCache
 
 app = FastAPI()
@@ -49,6 +50,8 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
         load_new = True
         query = query[1:]
 
+    ebay = apis.ebay.get_items_by_search(query)
+
     if load_new:
         amazon = apis.amazon.get_items_by_search(query)
         bestbuy = apis.bestbuy.get_items_by_search(query)
@@ -82,6 +85,13 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
         
 
     cached_calls.add(query)
+
+    all_items = concat([
+        all_items,
+        [{**item, "history": []} for item in ebay]
+    ])
+
+    print([{**item, "history": []} for item in ebay])
 
     return all_items
     
