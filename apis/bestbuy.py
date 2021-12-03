@@ -4,18 +4,18 @@ import functools
 from environs import Env
 
 env = Env()
-API_KEY = env("API_KEY_BESTBUY")
+API_KEY = env('API_KEY_BESTBUY')
 
 def fetch_api(query):
-    searchParam = ""
+    searchParam = ''
 
     for q in query.split():
-        searchParam += "search=" + q + "&"
+        searchParam += 'search=' + q + '&'
 
     searchParam = searchParam[:-1]
-    url = f"https://api.bestbuy.com/v1/products(" + searchParam + ")"
+    url = f'https://api.bestbuy.com/v1/products(' + searchParam + ')'
 
-    querystring = {"format":"json","show":"name,salePrice,shortDescription,url,image,upc", "apiKey":API_KEY}
+    querystring = {'format':'json','show':'name,salePrice,shortDescription,url,image,upc', 'apiKey':API_KEY}
 
     return requests.get(url, params=querystring).json()
 
@@ -36,7 +36,7 @@ def _clean_up_data(results, timestamp):
     return clean_results
 
 def get_items_by_search(query):
-    print(f"Fetching new for ${query}")
+    print(f'Fetching new for ${query}')
     results = fetch_api(query)
 
     timestamp = time.time()

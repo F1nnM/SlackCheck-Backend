@@ -5,27 +5,27 @@ from environs import Env
 import re
 
 env = Env()
-API_KEY = env("API_KEY_AMAZON")
+API_KEY = env('API_KEY_AMAZON')
 def fetch_api(query):
-    url = "https://amazon-price1.p.rapidapi.com/search"
+    url = 'https://amazon-price1.p.rapidapi.com/search'
 
-    querystring = {"keywords":query,"marketplace":"DE"}
+    querystring = {'keywords':query,'marketplace':'DE'}
 
     headers = {
-        'x-rapidapi-host': "amazon-price1.p.rapidapi.com",
+        'x-rapidapi-host': 'amazon-price1.p.rapidapi.com',
         'x-rapidapi-key': API_KEY
         }
 
-    return requests.request("GET", url, headers=headers, params=querystring).json()
+    return requests.request('GET', url, headers=headers, params=querystring).json()
 
 #clean up the results
 def _clean_up_data(results, timestamp):
     clean_results = []
     for result in results:
         price = 0
-        price_matches = re.findall("^\d+,\d+", result['price'])
+        price_matches = re.findall('^\d+,\d+', result['price'])
         if price_matches:
-            price = float(price_matches[0].replace(",", "."))
+            price = float(price_matches[0].replace(',', '.'))
         if price > 0:
             clean_results.append({
                 'name': result['title'],
@@ -39,7 +39,7 @@ def _clean_up_data(results, timestamp):
     return clean_results
 
 def get_items_by_search(query):
-    print(f"Fetching new for ${query}")
+    print(f'Fetching new for ${query}')
     results = fetch_api(query)
 
     timestamp = time.time()

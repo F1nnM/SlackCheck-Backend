@@ -13,6 +13,7 @@ from utils.cache import HistoryCache
 
 app = FastAPI()
 
+
 class Item(BaseModel):
     class HistoryEntry(BaseModel):
         timestamp: float
@@ -26,27 +27,29 @@ class Item(BaseModel):
     image: Optional[str] = None
     history: List[HistoryEntry]
 
-""" dummy_data = [{"name": "XYZ",
-             "price": 1234,
-             "description": "XYZ",
-             "platform": "XYZ",
-             "url": "XY.de",
-             "image": "https://via.placeholder.com/150",
-             "history": [
+
+''' dummy_data = [{'name': 'XYZ',
+             'price': 1234,
+             'description': 'XYZ',
+             'platform': 'XYZ',
+             'url': 'XY.de',
+             'image': 'https://via.placeholder.com/150',
+             'history': [
                  {
-                     "timestamp": 1234,
-                     "growth": 1,
-                     "price": 1234
+                     'timestamp': 1234,
+                     'growth': 1,
+                     'price': 1234
                  }
-             ]}] """
+             ]}] '''
 
 
 history = HistoryCache()
 cached_calls = set()
 
-@app.get("/", response_model=List[Item])
+
+@app.get('/', response_model=List[Item])
 def query(query: Optional[str] = None, load_new: Optional[bool] = False):
-    if query[0] == "!":
+    if query[0] == '!':
         load_new = True
         query = query[1:]
 
@@ -58,44 +61,44 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
     else:
         amazon = deepcopy(apis.amazon.get_items_by_search_cached(query))
         bestbuy = deepcopy(apis.bestbuy.get_items_by_search_cached(query))
-    
+
     all_items = concat([
         amazon,
-        bestbuy
+        bestbuy,
+        ebay
     ])
 
     for item in all_items:
-        if load_new or not query in cached_calls:
-            history.add(item['history_id'], item['timestamp'], item['price'])
+        if item['platform'] is 'Ebay':
+            item['history'] = [{
+                'timestamp': item['timestamp'],
+                'price': item['price'],
+                'growth': 1
+            }]
+        else: 
 
-        del item['timestamp']
+            if load_new or not query in cached_calls:
+                history.add(item['history_id'], item['timestamp'], item['price'])
 
-        item['history'] = [{
-            "timestamp": timestamp,
-            "price": price
-        } for (timestamp, price) in history.get(item['history_id'])]
+            item['history'] = [{
+                'timestamp': timestamp,
+                'price': price
+            } for (timestamp, price) in history.get(item['history_id'])]
 
-        del item['history_id']
-
-        for index in range(len(item['history'])):
-            if index == 0:
-                item['history'][index]['growth'] = 1
-            else:
-                item['history'][index]['growth'] = int((item['history'][index]['price'] / item['history'][index-1]['price'])*1000)/1000
-        
+            for index in range(len(item['history'])):
+                if index == 0:
+                    item['history'][index]['growth'] = 1
+                else:
+                    item['history'][index]['growth'] = int(
+                        (item['history'][index]['price'] / item['history'][index-1]['price'])*1000)/1000
 
     cached_calls.add(query)
 
-    all_items = concat([
-        all_items,
-        [{**item, "history": []} for item in ebay]
-    ])
-
-    print([{**item, "history": []} for item in ebay])
-
     return all_items
-    
+
 # concat multiple lists
+
+
 def concat(lists: List[List[Item]]) -> List[Item]:
     result = []
     for l in lists:
