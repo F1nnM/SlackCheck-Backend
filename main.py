@@ -25,6 +25,7 @@ class Item(BaseModel):
     platform: str
     url: str
     image: Optional[str] = None
+    growth: float
     history: List[HistoryEntry]
 
 
@@ -34,6 +35,7 @@ class Item(BaseModel):
              'platform': 'XYZ',
              'url': 'XY.de',
              'image': 'https://via.placeholder.com/150',
+             'growth': 1.2,
              'history': [
                  {
                      'timestamp': 1234,
@@ -75,6 +77,7 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
                 'price': item['price'],
                 'growth': 1
             }]
+            item['growth'] = 1
         else: 
 
             if load_new or not query in cached_calls:
@@ -85,13 +88,19 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
                 'price': price
             } for (timestamp, price) in history.get(item['history_id'])]
 
+            growth = 1
+
             for index in range(len(item['history'])):
                 if index == 0:
                     item['history'][index]['growth'] = 1
                 else:
-                    item['history'][index]['growth'] = int(
-                        (item['history'][index]['price'] / item['history'][index-1]['price'])*1000)/1000
+                    current_growth = int((item['history'][index]['price'] / item['history'][index-1]['price'])*1000)/1000
+                    item['history'][index]['growth'] = current_growth
+                    growth *= current_growth
 
+            item['growth'] = growth
+
+            
     cached_calls.add(query)
 
     return all_items
