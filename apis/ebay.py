@@ -37,7 +37,6 @@ def _clean_up_data(results, timestamp):
               'url': result['viewItemURL'][0],
               'image': result['galleryURL'][0],
               'platform': 'Ebay',
-              'history_id': 'ebay'+result['itemId'][0],
               'timestamp': timestamp,
         })
     return clean_results

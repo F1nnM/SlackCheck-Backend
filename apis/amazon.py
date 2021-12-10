@@ -33,7 +33,6 @@ def _clean_up_data(results, timestamp):
                 'url': result['detailPageURL'],
                 'image': result['imageUrl'],
                 'platform': 'Amazon',
-                'history_id': 'amazon'+result['ASIN'],
                 'timestamp': timestamp,
             })
     return clean_results

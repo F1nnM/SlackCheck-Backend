@@ -81,12 +81,14 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
         else: 
 
             if load_new or not query in cached_calls:
-                history.add(item['history_id'], item['timestamp'], item['price'])
+                history.add(item['url'], item['timestamp'], item['price'])
+            else:
+                _, item['price'] = history.get(item['url'])[-1]
 
             item['history'] = [{
                 'timestamp': timestamp,
                 'price': price
-            } for (timestamp, price) in history.get(item['history_id'])]
+            } for (timestamp, price) in history.get(item['url'])]
 
             growth = 1
 
@@ -96,7 +98,8 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
                 else:
                     current_growth = int((item['history'][index]['price'] / item['history'][index-1]['price'])*1000)/1000
                     item['history'][index]['growth'] = current_growth
-                    growth *= current_growth
+                    if current_growth != 1:
+                        growth = current_growth
 
             item['growth'] = growth
 
@@ -113,3 +116,14 @@ def concat(lists: List[List[Item]]) -> List[Item]:
     for l in lists:
         result.extend(l)
     return result
+
+@app.post('/inject')
+def inject(input: List[Item]):
+    # read the items and save their history
+    print(input)
+    for item in input:
+        print(item)
+        for history_entry in item.history:
+            history.add(item.url, history_entry.timestamp, history_entry.price)
+
+    return {'status': 'ok'}

@@ -30,7 +30,6 @@ def _clean_up_data(results, timestamp):
             'url': result['url'],
             'image': result['image'],
             'platform': 'BestBuy',
-            'history_id': 'bestbuy'+result['upc'],
             'timestamp': timestamp,
         })
     return clean_results
