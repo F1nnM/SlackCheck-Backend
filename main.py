@@ -117,7 +117,7 @@ def concat(lists: List[List[Item]]) -> List[Item]:
         result.extend(l)
     return result
 
-@app.post('/inject')
+@app.get('/inject')
 def inject(input: List[Item]):
     # read the items and save their history
     print(input)
