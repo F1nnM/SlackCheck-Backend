@@ -97,7 +97,7 @@ def query(query: Optional[str] = None, load_new: Optional[bool] = False):
                 else:
                     # for every other enrty, calculate the growth
                     # history is already initialized
-                    current_growth = item['history'][index]['price'] / item['history'][index-1]['price']
+                    current_growth = entry['price'] / item['history'][index-1]['price']
                     current_growth = int(current_growth*1000)/1000 # round to 3 decimals
                     entry['growth'] = current_growth
 
