@@ -32,14 +32,6 @@ class Item(BaseModel):
 
 history = History()
 
-@app.post('/inject')
-def inject(input: List[Item]):
-    # read the items and save their history
-    for item in input:
-        for history_entry in item.history:
-            history.add(item.url, history_entry.timestamp, history_entry.price)
-
-    return {'status': 'ok'}
 
 @app.get('/', response_model=List[Item])
 def query(query: Optional[str] = None, load_new: Optional[bool] = False):
@@ -125,3 +117,14 @@ def concat(lists: List[List[Item]]) -> List[Item]:
     for l in lists:
         result.extend(l)
     return result
+
+@app.post('/inject')
+def inject(input: List[Item]):
+    # read the items and save their history
+    print(input)
+    for item in input:
+        print(item)
+        for history_entry in item.history:
+            history.add(item.url, history_entry.timestamp, history_entry.price)
+
+    return {'status': 'ok'}
