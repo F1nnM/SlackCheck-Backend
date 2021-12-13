@@ -3,6 +3,7 @@ import time
 import functools
 from environs import Env
 
+# Load the API key from environment variables
 env = Env()
 API_KEY = env('API_KEY_BESTBUY')
 
@@ -35,7 +36,7 @@ def _clean_up_data(results, timestamp):
     return clean_results
 
 def get_items_by_search(query):
-    print(f'Fetching new for ${query}')
+    print(f'Fetching new for: {query}')
     results = fetch_api(query)
 
     timestamp = time.time()

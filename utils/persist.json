@@ -1,0 +1,671 @@
+[
+  {
+    "name": "Palit GeForce GTX 1050 Ti NE5105T018G1F Grafikkarte 4GB (DDR5 128bit) schwarz",
+    "price": 408.67,
+    "description": null,
+    "platform": "Amazon",
+    "url": "https://www.amazon.de/dp/B01M2ZC61B",
+    "image": "https://m.media-amazon.com/images/I/51mALJkEL+L._SL160_.jpg",
+    "growth": 0.952665,
+    "history": [
+      {
+        "timestamp": 1638899357.994238,
+        "price": 408.67,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1638985361.555702,
+        "price": 408.67,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639011419.2529657,
+        "price": 431.32,
+        "growth": 1.055
+      },
+      {
+        "timestamp": 1639061130.3043437,
+        "price": 431.32,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639122889.5161922,
+        "price": 389.9,
+        "growth": 0.903
+      },
+      {
+        "timestamp": 1639127710.6031518,
+        "price": 389.9,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Salomon Speedcross 4 Gore-Tex (wasserdicht) Herren Trailrunning-Schuhe, Blau (Sky Diver/Indigo Bunting/Black), 44 EU",
+    "price": 110.85,
+    "description": null,
+    "platform": "Amazon",
+    "url": "https://www.amazon.de/dp/B07D11WGV3",
+    "image": "https://m.media-amazon.com/images/I/41NdPeVoWSL._SL160_.jpg",
+    "growth": 1.039,
+    "history": [
+      {
+        "timestamp": 1638899357.994238,
+        "price": 110.85,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639040939.5462308,
+        "price": 110.85,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639045777.246153,
+        "price": 115.2,
+        "growth": 1.039
+      },
+      {
+        "timestamp": 1639127710.6031518,
+        "price": 115.2,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "ASUS NVIDIA GeForce GTX 1650 Phoenix OC 4G Gaming Grafikkarte (PCIe 3.0, 4GB DDR5 Speicher, HDMI, DVI, Displayport)",
+    "price": 499.0,
+    "description": null,
+    "platform": "Amazon",
+    "url": "https://www.amazon.de/dp/B07QQZT36M",
+    "image": "https://m.media-amazon.com/images/I/510k6J6fDaL._SL160_.jpg",
+    "growth": 1.038,
+    "history": [
+      {
+        "timestamp": 1638899357.994238,
+        "price": 499.0,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1638985361.555702,
+        "price": 499.0,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639045777.246153,
+        "price": 518.41,
+        "growth": 1.038
+      },
+      {
+        "timestamp": 1639061130.3043437,
+        "price": 518.41,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "MSIA5 MSI GTX1660 Super Gaming X 6G 6144MB, Pci-E, DVI, HDMI, 3Xdp V375-282R",
+    "price": 739.9,
+    "description": null,
+    "platform": "Amazon",
+    "url": "https://www.amazon.de/dp/B07ZPM3388",
+    "image": "https://m.media-amazon.com/images/I/51TiY2I3YkL._SL160_.jpg",
+    "growth": 1.012,
+    "history": [
+      {
+        "timestamp": 1638899357.994238,
+        "price": 739.9,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1638985361.555702,
+        "price": 739.9,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639011419.2529657,
+        "price": 749.0,
+        "growth": 1.012
+      },
+      {
+        "timestamp": 1639127710.6031518,
+        "price": 749.0,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "MSI GeForce GTX 1050 TI 4GT LP 4GB Nvidia GDDR5 1x HDMI, 1x DP, 1x DL-DVI-D, 2 Slot Low Proflie, Afterburner OC, Nvidia G-Sync, Grafikkarte",
+    "price": 364.94,
+    "description": null,
+    "platform": "Amazon",
+    "url": "https://www.amazon.de/dp/B01N683IAQ",
+    "image": "https://m.media-amazon.com/images/I/412LM81yJrL._SL160_.jpg",
+    "growth": 1.16412,
+    "history": [
+      {
+        "timestamp": 1638899357.994238,
+        "price": 364.94,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1638985361.555702,
+        "price": 364.94,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639011419.2529657,
+        "price": 365.12,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639040939.5462308,
+        "price": 365.12,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639045777.246153,
+        "price": 398.22,
+        "growth": 1.09
+      },
+      {
+        "timestamp": 1639061130.3043437,
+        "price": 398.22,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639122889.5161922,
+        "price": 425.42,
+        "growth": 1.068
+      },
+      {
+        "timestamp": 1639127710.6031518,
+        "price": 425.42,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Salomon Damen X Ultra 4 GTX W Wandern, Lunar Rock Ebony Mint Leaf, 40 EU",
+    "price": 159.0,
+    "description": null,
+    "platform": "Amazon",
+    "url": "https://www.amazon.de/dp/B08LK4LFJZ",
+    "image": "https://m.media-amazon.com/images/I/41lmgzyHOyL._SL160_.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1638899357.994238,
+        "price": 159.0,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1638985361.555702,
+        "price": 159.0,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Trust GXT 830 RW-C Avonn Gaming Tastatur (Regenbogenwellen-Beleuchtung, 12 Media-Tasten, QWERTZ Deutsches Tastaturlayout)",
+    "price": 29.99,
+    "description": null,
+    "platform": "Amazon",
+    "url": "https://www.amazon.de/dp/B07YDYH8MT",
+    "image": "https://m.media-amazon.com/images/I/41hoTRaaPFL._SL160_.jpg",
+    "growth": 1.033,
+    "history": [
+      {
+        "timestamp": 1638899357.994238,
+        "price": 29.99,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1638985361.555702,
+        "price": 29.99,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639011419.2529657,
+        "price": 30.99,
+        "growth": 1.033
+      },
+      {
+        "timestamp": 1639127710.6031518,
+        "price": 30.99,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Gtx [Explicit]",
+    "price": 1.29,
+    "description": null,
+    "platform": "Amazon",
+    "url": "https://www.amazon.de/dp/B075SJHGZD",
+    "image": "https://m.media-amazon.com/images/I/51fQD7BPKuL._SL160_.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1638899357.994238,
+        "price": 1.29,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1638985361.555702,
+        "price": 1.29,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Lowa Renegade GTX Mid-Cut Schuhe Damen blau Schuhgröße UK 7 | EU 41 2021",
+    "price": 189.0,
+    "description": null,
+    "platform": "Amazon",
+    "url": "https://www.amazon.de/dp/B09L7X8BPT",
+    "image": "https://m.media-amazon.com/images/I/41ymSB1pmyS._SL160_.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1638899357.994238,
+        "price": 189.0,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1638985361.555702,
+        "price": 189.0,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Massive Audio - Massive GTX Series 6-Inch 250-Watt-RMS Dual 4-Ohm Subwoofer Black - Black",
+    "price": 75.99,
+    "description": "Massive GTX 64 Woofer - 250 W RMS - 500 W PMPO - 1 Pack - 4 Ohm - 88 dB Sensitivity - 6\" Woofer - Car",
+    "platform": "BestBuy",
+    "url": "https://api.bestbuy.com/click/-/6430901/pdp",
+    "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6430/6430901_sd.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1638899358.5578265,
+        "price": 75.99,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639127711.1665127,
+        "price": 75.99,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "ASUS - NVIDIA GeForce GTX 1660 SUPER OC Edition 6GB GDDR6 PCI Express 3.0 Graphics Card - Black/Gray",
+    "price": 329.99,
+    "description": "6GB GDDR6 memory; PCI Express 3.0 interface; DVI, HDMI and DisplayPort outputs; 1530MHz clock speed; 192-bit memory; ASUS GPU Tweak II and NVIDIA GeForce Experience software; ASUS DirectCU II Technology; AUTO-EXTREME technology",
+    "platform": "BestBuy",
+    "url": "https://api.bestbuy.com/click/-/6405063/pdp",
+    "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6405/6405063_sd.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1638899358.5578265,
+        "price": 329.99,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639127711.1665127,
+        "price": 329.99,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "MSI - GAMING X NVIDIA GeForce GTX 1660 SUPER 6GB GDDR6 PCI Express 3.0 Graphics Card - Black/Gray",
+    "price": 379.99,
+    "description": "6GB GDDR6 memory; PCI Express 3.0 interface; HDMI and 3 DisplayPort outputs; 192-bit memory; MSI Zero Frozr technology",
+    "platform": "BestBuy",
+    "url": "https://api.bestbuy.com/click/-/6389333/pdp",
+    "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6389/6389333_sd.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1638899358.5578265,
+        "price": 379.99,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639127711.1665127,
+        "price": 379.99,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "MSI - NVIDIA GeForce GTX 1650 SUPER 4GB GDDR6 PCI Express 3.0 Graphics Card - Black/Gray",
+    "price": 279.99,
+    "description": "4GB GDDR6 memory; PCI Express 3.0 interface; HDMI and 3 DisplayPort outputs; 128-bit memory; MSI Afterburner and MSI Dragon Gaming Center software; MSI Zero Frozr technology",
+    "platform": "BestBuy",
+    "url": "https://api.bestbuy.com/click/-/6397798/pdp",
+    "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6397/6397798_sd.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1638899358.5578265,
+        "price": 279.99,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639127711.1665127,
+        "price": 279.99,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "MSI - GeForce GTX 1660 Ti Gaming X 6GB GDDR6 PCI Express 3.0 Graphics Card",
+    "price": 399.99,
+    "description": "6GB GDDR6 memory; PCI Express 3.0; HDMI and DisplayPort outputs; 192-bit memory",
+    "platform": "BestBuy",
+    "url": "https://api.bestbuy.com/click/-/6330461/pdp",
+    "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6330/6330461_sd.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1638899358.5578265,
+        "price": 399.99,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639127711.1665127,
+        "price": 399.99,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Shuttle - XPC slim Gaming Desktop - Intel Celeron 3865U - NVIDIA GeForce GTX 1050 - Black",
+    "price": 1179.99,
+    "description": "NVIDIA GeForce GTX 1050 4GB dedicated graphicsTechnical details: Intel&#174; Celeron&#174;-3865U processorSpecial features: HDMI output",
+    "platform": "BestBuy",
+    "url": "https://api.bestbuy.com/click/-/6359718/pdp",
+    "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6359/6359718_sa.jpg",
+    "growth": 0.850156,
+    "history": [
+      {
+        "timestamp": 1638899358.5578265,
+        "price": 1179.99,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1638901425.7557473,
+        "price": 1179.99,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1638963977.8770788,
+        "price": 976.99,
+        "growth": 0.827
+      },
+      {
+        "timestamp": 1639045777.8742185,
+        "price": 976.99,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639061130.8717942,
+        "price": 1004.99,
+        "growth": 1.028
+      },
+      {
+        "timestamp": 1639127711.1665127,
+        "price": 1004.99,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "MSI - GF63 15.6\" Gaming Laptop - Intel Core i5 - NVIDIA GeForce GTX1650 - 256GB SSD - 8GB Memory - Black",
+    "price": 729.99,
+    "description": "15.6\" i5-10200H/GTX1650/8GB/256/Win10",
+    "platform": "BestBuy",
+    "url": "https://api.bestbuy.com/click/-/6456141/pdp",
+    "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6456/6456141_sd.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1638899358.5578265,
+        "price": 729.99,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639127711.1665127,
+        "price": 729.99,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "GIGABYTE - NVIDIA GeForce GTX 1660 Ti 6GB GDDR6 PCI Express 3.0 Graphics Card - Black/Gray",
+    "price": 279.99,
+    "description": "NVIDIA GeForce GTX 1660 Ti 6GB GDDR6 PCI Express 3.0 Graphics Card",
+    "platform": "BestBuy",
+    "url": "https://api.bestbuy.com/click/-/6409180/pdp",
+    "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6409/6409180_sd.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1638899358.5578265,
+        "price": 279.99,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639127711.1665127,
+        "price": 279.99,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Shuttle - XPC slim Gaming Desktop - Intel Core i5-7200U - NVIDIA GeForce GTX 1050 - Black",
+    "price": 1515.99,
+    "description": "NVIDIA GeForce GTX 1050 4GB dedicated graphicsTechnical details: 7th Gen Intel&#174; Core&#8482; i5-7200U processorSpecial features: HDMI output",
+    "platform": "BestBuy",
+    "url": "https://api.bestbuy.com/click/-/6359752/pdp",
+    "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6359/6359752_sd.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1638899358.5578265,
+        "price": 1515.99,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639127711.1665127,
+        "price": 1515.99,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Shuttle - XPC slim Gaming Desktop - Intel Core i3-7100U - NVIDIA GeForce GTX 1050 - Black",
+    "price": 1399.99,
+    "description": "NVIDIA GeForce GTX 1050 4GB dedicated graphicsTechnical details: 7th Gen Intel&#174; Core&#8482; i3-7100U processorSpecial features: HDMI output",
+    "platform": "BestBuy",
+    "url": "https://api.bestbuy.com/click/-/6359753/pdp",
+    "image": "https://pisces.bbystatic.com/prescaled/500/500/image2/BestBuy_US/images/products/6359/6359753_sd.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1638899358.5578265,
+        "price": 1399.99,
+        "growth": 1.0
+      },
+      {
+        "timestamp": 1639127711.1665127,
+        "price": 1399.99,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Gigabyte GeForce GTX 750 Ti GTX750 TI 2GB GDDR5 128 Bit Gaming Graphics",
+    "price": 116.66,
+    "description": null,
+    "platform": "Ebay",
+    "url": "https://www.ebay.com/itm/Gigabyte-GeForce-GTX-750-Ti-GTX750-TI-2GB-GDDR5-128-Bit-Gaming-Graphics-/154384304944",
+    "image": "https://i.ebayimg.com/thumbs/images/g/deEAAOSwRHRgWLoy/s-l140.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1639130824.2575154,
+        "price": 116.66,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "ASUS STRIX GTX 1080 A8G",
+    "price": 600.0,
+    "description": null,
+    "platform": "Ebay",
+    "url": "https://www.ebay.com/itm/ASUS-STRIX-GTX-1080-A8G-/234327250644",
+    "image": "https://i.ebayimg.com/thumbs/images/g/vr8AAOSwUchhoRY6/s-l140.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1639130824.2575154,
+        "price": 600.0,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "NVIDIA GeForce GTX 1650 SUPER | 4GB GDDR6 Grafikkarte | Neuware | OEM L83811-001",
+    "price": 389.0,
+    "description": null,
+    "platform": "Ebay",
+    "url": "https://www.ebay.com/itm/NVIDIA-GeForce-GTX-1650-SUPER-4GB-GDDR6-Grafikkarte-Neuware-OEM-L83811-001-/115135137485",
+    "image": "https://i.ebayimg.com/thumbs/images/g/3i0AAOSwdbFhsv95/s-l140.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1639130824.2575154,
+        "price": 389.0,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "NVIDIA GTX 750TI 2GB ASUS - PCIE - TESTED",
+    "price": 94.99,
+    "description": null,
+    "platform": "Ebay",
+    "url": "https://www.ebay.com/itm/NVIDIA-GTX-750TI-2GB-ASUS-PCIE-TESTED-/175052546413",
+    "image": "https://i.ebayimg.com/thumbs/images/g/mTAAAOSwvNRhe0Ur/s-l140.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1639130824.2575154,
+        "price": 94.99,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Asus ROG Mars GTX 760 x2 4Gb Collector Rare!",
+    "price": 299.9,
+    "description": null,
+    "platform": "Ebay",
+    "url": "https://www.ebay.com/itm/Asus-ROG-Mars-GTX-760-x2-4Gb-Collector-Rare-/393765016942",
+    "image": "https://i.ebayimg.com/thumbs/images/g/wFAAAOSw7O5hrPPK/s-l140.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1639130824.2575154,
+        "price": 299.9,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "PCI-E Grafikkarte - ZOTAC GTX260 AMP EDITION - 896 MB - 448 BIT - DDR3 - 2x DVI ",
+    "price": 45.0,
+    "description": null,
+    "platform": "Ebay",
+    "url": "https://www.ebay.com/itm/PCI-E-Grafikkarte-ZOTAC-GTX260-AMP-EDITION-896-MB-448-BIT-DDR3-2x-DVI-/353805808153",
+    "image": "https://i.ebayimg.com/thumbs/images/g/TAgAAOSwZVZhsyOb/s-l140.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1639130824.2575154,
+        "price": 45.0,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Gtx 1060 6gb zotac",
+    "price": 300.0,
+    "description": null,
+    "platform": "Ebay",
+    "url": "https://www.ebay.com/itm/Gtx-1060-6gb-zotac-/224732760881",
+    "image": "https://i.ebayimg.com/thumbs/images/g/CCwAAOSwO1Jg3BWE/s-l140.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1639130824.2575154,
+        "price": 300.0,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Palit GeForce GTX 1050 2GB",
+    "price": 120.0,
+    "description": null,
+    "platform": "Ebay",
+    "url": "https://www.ebay.com/itm/Palit-GeForce-GTX-1050-2GB-/334248343283",
+    "image": "https://i.ebayimg.com/thumbs/images/g/JX0AAOSwmPphsKGn/s-l140.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1639130824.2575154,
+        "price": 120.0,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "MSI GEFORCE GTX 1060 ARMOR 6G OC / OVP",
+    "price": 299.0,
+    "description": null,
+    "platform": "Ebay",
+    "url": "https://www.ebay.com/itm/MSI-GEFORCE-GTX-1060-ARMOR-6G-OC-OVP-/175056263606",
+    "image": "https://i.ebayimg.com/thumbs/images/g/DFEAAOSwUDRhsdKx/s-l140.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1639130824.2575154,
+        "price": 299.0,
+        "growth": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Zotac Gaming Geforce GTX 1650 Super 4GB ",
+    "price": 315.0,
+    "description": null,
+    "platform": "Ebay",
+    "url": "https://www.ebay.com/itm/Zotac-Gaming-Geforce-GTX-1650-Super-4GB-/194593618477",
+    "image": "https://i.ebayimg.com/thumbs/images/g/v8wAAOSwLvdhsOG4/s-l140.jpg",
+    "growth": 1.0,
+    "history": [
+      {
+        "timestamp": 1639130824.2575154,
+        "price": 315.0,
+        "growth": 1.0
+      }
+    ]
+  }
+]

@@ -4,8 +4,10 @@ import functools
 from environs import Env
 import re
 
+# Load the API key from environment variables
 env = Env()
 API_KEY = env('API_KEY_AMAZON')
+
 def fetch_api(query):
     url = 'https://amazon-price1.p.rapidapi.com/search'
 
@@ -22,6 +24,9 @@ def fetch_api(query):
 def _clean_up_data(results, timestamp):
     clean_results = []
     for result in results:
+        # The amazon API retuns the price as a string, sometimes containing the original price as well e.g. "19,99 € (15,99 €)"
+        # We only want the current price, so we use regex to extract it.
+        # If something has a price of 0, this usually means it's a movie only available on other platforms, and we are not interested in that.
         price = 0
         price_matches = re.findall('^\d+,\d+', result['price'])
         if price_matches:
@@ -38,7 +43,7 @@ def _clean_up_data(results, timestamp):
     return clean_results
 
 def get_items_by_search(query):
-    print(f'Fetching new for ${query}')
+    print(f'Fetching new for: {query}')
     results = fetch_api(query)
 
     timestamp = time.time()

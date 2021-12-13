@@ -4,8 +4,10 @@ import functools
 from environs import Env
 import re
 
+# Load the API key from environment variables
 env = Env()
 API_KEY = env('API_KEY_EBAY')
+
 def fetch_api(query):
     url = 'https://svcs.ebay.de/services/search/FindingService/v1?'
 
@@ -17,6 +19,7 @@ def fetch_api(query):
       'REST-PAYLOAD': 'true',
       'paginationInput.entriesPerPage': '10',
       'keywords': query,
+      # we only want to see fixed price items, available to us, no auctions, etc.
       'itemFilter(0).name': 'AvailableTo',
       'itemFilter(0).value': 'DE',
       'itemFilter(1).name': 'Currency',
